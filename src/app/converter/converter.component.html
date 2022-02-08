@@ -1,0 +1,18 @@
+<h3 class="heading">Currency Converter</h3>
+<div class="container">
+  <div class="input-area">
+    <input type="number" [(ngModel)]="input">
+    <select class="form-select" [(ngModel)]="current_currency">
+      <option *ngFor="let x of currencies">{{x}}</option>
+    </select>
+  </div>
+  <div class="input-area">
+    <input type="number" [ngModel]="convertCurrencies()">
+    <select [(ngModel)]="target_currency">
+      <option *ngFor="let x of currencies">{{x}}</option>
+    </select>
+  </div>
+</div>
+<div class="button-container">
+  <button class="clear" (click)="clearCalculation()">Clear</button>
+</div>

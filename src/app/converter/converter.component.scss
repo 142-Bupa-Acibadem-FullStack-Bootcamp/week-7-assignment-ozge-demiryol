@@ -1,0 +1,69 @@
+$input-color: rgb(0, 163, 0);
+$font-color: rgb(1, 77, 1);
+h3.heading {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: $input-color;
+  letter-spacing: 0.4px;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  div.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    color: $font-color;
+    border-radius: 1.25rem;
+    border: 2px solid $input-color;
+    padding: 0 1rem 0 2rem;
+    margin-bottom: 2rem;
+    input[type="number"] {
+      border: none;
+      background-color: transparent;
+      color: $font-color;
+      outline: none;
+      font-size: 1rem;
+      border-right: 2px solid $input-color;
+      height: 100%;
+      width: 80%;
+    }
+
+    select {
+      border-left: 2px solid $input-color;
+      margin-left: 2rem;
+      border: none;
+      outline: none;
+      color: $font-color;
+      height: 100%;
+      background-color: transparent;
+    }
+  }
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button.clear {
+    width: 10rem;
+    height: 2.4rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.5px;
+    border-radius: 1.2rem;
+    background-color: $input-color;
+    color: white;
+    border: 2px solid $input-color;
+    &:hover {
+      cursor: pointer;
+      border: 2px solid $input-color;
+      background: transparent;
+      color: $input-color;
+    }
+  }
+}
